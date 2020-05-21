@@ -7,6 +7,7 @@ library(lubridate)
 ## to read the data into R, change the sep to ";", setting thr stringAsFactor to False
 ## turn the data into a tbl_df
 ## remove the original data frame
+setwd("~/R.Studio/Exploratory_data_analysis/week1/CourseProject1")
 data <- read.delim("household_power_consumption.txt", sep = ";", stringsAsFactors = F)
 dat <- tbl_df(data)
 rm(data)
